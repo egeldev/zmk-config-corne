@@ -1,0 +1,4 @@
+#define mBAS  0
+#define mDEV  1
+#define mNUM  2
+#define mCOF  3
