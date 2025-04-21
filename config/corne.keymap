@@ -12,7 +12,6 @@
   behaviors {
     tp: tap_preferred {
       compatible = "zmk,behavior-hold-tap";
-      label = "TAP_PREFERRED";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       quick-tap-ms = <150>;
@@ -21,7 +20,6 @@
     };
     hp: hold_preferred {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOLD_PREFERRED";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       quick-tap-ms = <150>;
@@ -57,7 +55,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &kp UP &trans &trans &bt BT_CLR_ALL
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-                                    &kp LGUI     &trans       &kp LALT RET       &tp LC(LS(LA(LGUI))) SPACE  &trans   &kp RALT
+                                    &kp LGUI     &trans       &tp LALT RET       &tp LC(LS(LA(LGUI))) SPACE  &trans   &kp RALT
                         >;
                 };
 
